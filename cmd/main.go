@@ -8,9 +8,6 @@ import (
 type user internal.User
 
 func (u user) String() string {
-	if u == (user{}) {
-		return ("Not found!")
-	}
 	return fmt.Sprintf("%v (%d) %v", u.Name, u.Age, u.Email)
 }
 
